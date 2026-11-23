@@ -21,7 +21,6 @@
     }
 
     * { box-sizing: border-box; }
-
     .gyg-privacy {
       --green: #b5ef75;
       --panel: #101210;
@@ -39,7 +38,6 @@
     .gyg-privacy p + p { margin-top: 14px; }
     .gyg-privacy a { color: var(--green); text-underline-offset: .18em; }
     .gyg-privacy :focus-visible { outline: 2px solid var(--green); outline-offset: 4px; }
-
     .gyg-privacy__hero {
       padding: clamp(22px, 5vw, 48px);
       border: 1px solid var(--line);
@@ -60,7 +58,6 @@
     .gyg-privacy__hero h1 span { color: var(--green); }
     .gyg-privacy .gyg-privacy__date { margin-top: 12px; font-size: .87rem; }
     .gyg-privacy .gyg-privacy__intro { max-width: 62ch; margin-top: 21px; }
-
     .gyg-privacy .gyg-privacy__action {
       display: inline-flex;
       align-items: center;
@@ -78,7 +75,6 @@
 
     .gyg-privacy .gyg-privacy__action:hover { background: #cefaa9; }
     .gyg-privacy__section { margin-top: clamp(24px, 5vw, 40px); }
-
     .gyg-privacy__facts {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(min(100%, 216px), 1fr));
@@ -98,7 +94,6 @@
     }
 
     .gyg-privacy__facts strong { display: block; margin-bottom: 3px; color: var(--green); }
-
     .gyg-privacy__detail {
       margin-bottom: 9px;
       border: 1px solid var(--line);
@@ -107,7 +102,6 @@
     }
 
     .gyg-privacy__detail[open] { border-color: #526940; }
-
     .gyg-privacy__detail summary {
       display: flex;
       align-items: center;
@@ -125,125 +119,104 @@
     .gyg-privacy__detail summary:hover { background: #1b2019; }
     .gyg-privacy__detail h3 { font-size: 1rem; }
     .gyg-privacy__detail[open] h3 { color: var(--green); }
-
-    .gyg-privacy__indicator {
-      display: grid;
-      flex: 0 0 28px;
-      height: 28px;
-      place-items: center;
-      border-radius: 50%;
-      background: #21291b;
-      color: var(--green);
-    }
-
-    .gyg-privacy__indicator::before {
-      content: "";
-      width: 8px;
-      height: 8px;
-      margin-top: -3px;
-      border: solid currentColor;
-      border-width: 0 2px 2px 0;
-      transform: rotate(45deg);
-    }
-
-    .gyg-privacy__detail[open] .gyg-privacy__indicator::before {
-      transform: translateY(3px) rotate(225deg);
-    }
-
+    .gyg-privacy__indicator { display: grid; flex: 0 0 28px; height: 28px; place-items: center; border-radius: 50%; background: #21291b; color: var(--green); }
+    .gyg-privacy__indicator::before { content: ""; width: 8px; height: 8px; margin-top: -3px; border: solid currentColor; border-width: 0 2px 2px 0; transform: rotate(45deg); }
+    .gyg-privacy__detail[open] .gyg-privacy__indicator::before { transform: translateY(3px) rotate(225deg); }
     .gyg-privacy__detail-body { padding: 4px 15px 18px; }
-
-    .gyg-privacy__rights {
-      padding: clamp(16px, 3vw, 28px);
-      border: 1px solid #526940;
-      border-radius: 17px;
-      background: var(--panel);
-      scroll-margin-top: 1rem;
-    }
-
+    .gyg-privacy__rights { padding: clamp(16px, 3vw, 28px); border: 1px solid #526940; border-radius: 17px; background: var(--panel); scroll-margin-top: 1rem; }
     .gyg-privacy__rights:target { border-color: var(--green); }
     .gyg-privacy__footer { padding-top: 15px; border-top: 1px solid var(--line); font-size: .88rem; }
     .gyg-privacy__footer h2 { font-size: .95rem; }
   </style>
 </head>
 <body>
-  <article class="gyg-privacy" aria-labelledby="politica-privacidad-tienda-gyg">
-    <header class="gyg-privacy__hero">
-      <p class="gyg-privacy__brand">Tienda GYG</p>
-      <h1 id="politica-privacidad-tienda-gyg">Política de <span>privacidad</span></h1>
-      <p class="gyg-privacy__date">Última actualización: <time datetime="2026-11-22">22 de noviembre de 2026</time>.</p>
-      <p class="gyg-privacy__intro">Esta política explica cómo Tienda GYG trata los datos al usar su app Android, incluidos los catálogos de Tienda GYG y Destellos Luna Azul, y al continuar una compra en la tienda web. Para consultas sobre privacidad, escribinos a <a href="mailto:infogyg2802@gmail.com">infogyg2802@gmail.com</a>.</p>
-      <a class="gyg-privacy__action" href="#gyg-derechos-de-privacidad">Cómo borrar mis datos <span aria-hidden="true">↓</span></a>
-    </header>
+<article class="gyg-privacy" lang="es-AR" aria-labelledby="politica-privacidad-tienda-gyg">
+  <header class="gyg-privacy__hero">
+    <p class="gyg-privacy__brand">Tienda GYG</p>
+    <h1 id="politica-privacidad-tienda-gyg">Política de <span>privacidad</span></h1>
+    <p class="gyg-privacy__date">Última actualización: <time datetime="2026-11-23">23 de noviembre de 2026</time>.</p>
+    <p class="gyg-privacy__intro">Esta política explica cómo Tienda GYG trata los datos al usar su app Android, incluidos los catálogos de Tienda GYG y Destellos Luna Azul, y al continuar una compra en la tienda web. Para consultas sobre privacidad, escribinos a <a href="mailto:infogyg2802@gmail.com">infogyg2802@gmail.com</a>.</p>
+    <a class="gyg-privacy__action" href="#gyg-derechos-de-privacidad">Cómo borrar mis datos <span aria-hidden="true">↓</span></a>
+  </header>
 
-    <section class="gyg-privacy__section" aria-labelledby="gyg-privacidad-resumen">
-      <h2 id="gyg-privacidad-resumen">Lo esencial</h2>
-      <ul class="gyg-privacy__facts" role="list">
-        <li><strong>Regalos</strong> Tu búsqueda se procesa en el celular.</li>
-        <li><strong>Avisos de stock</strong> Se guardan en el celular y podés cancelarlos.</li>
-        <li><strong>Compras</strong> Al continuar a la web se envían las variantes y cantidades del carrito.</li>
-      </ul>
-    </section>
+  <section class="gyg-privacy__section" aria-labelledby="gyg-privacidad-resumen">
+    <h2 id="gyg-privacidad-resumen">Lo esencial</h2>
+    <ul class="gyg-privacy__facts" role="list">
+      <li><strong>Regalos</strong> Tu búsqueda se procesa en el celular.</li>
+      <li><strong>Avisos de stock</strong> Se guardan en el celular y podés cancelarlos.</li>
+      <li><strong>Compras</strong> Al continuar a la web se envían las variantes y cantidades del carrito.</li>
+      <li><strong>Descuentos</strong> Cloudflare asigna un código y consulta a Tiendanube para confirmar su uso.</li>
+    </ul>
+  </section>
 
-    <section class="gyg-privacy__section" aria-labelledby="gyg-privacidad-detalle">
-      <h2 id="gyg-privacidad-detalle">Cómo se usan tus datos</h2>
+  <section class="gyg-privacy__section" aria-labelledby="gyg-privacidad-detalle">
+    <h2 id="gyg-privacidad-detalle">Cómo se usan tus datos</h2>
+    <details class="gyg-privacy__detail">
+      <summary>
+        <h3>Qué guarda la app en tu teléfono</h3>
+        <span class="gyg-privacy__indicator" aria-hidden="true"></span>
+      </summary>
+      <div class="gyg-privacy__detail-body">
+        <p>La app guarda una copia del catálogo para mostrarlo más rápido, tus favoritos, tu carrito local y los productos para los que activás avisos de stock. Podés explorar el catálogo sin iniciar sesión en la app.</p>
+      </div>
+    </details>
+    <details class="gyg-privacy__detail">
+      <summary>
+        <h3>Buscador de regalos</h3>
+        <span class="gyg-privacy__indicator" aria-hidden="true"></span>
+      </summary>
+      <div class="gyg-privacy__detail-body">
+        <p>La frase que escribís y el presupuesto que indicás se procesan íntegramente en tu teléfono para recomendar productos del catálogo. La app no envía la frase ni el presupuesto a Tienda GYG, Tiendanube ni a un proveedor de inteligencia artificial. Tampoco guarda un historial de tus búsquedas de regalos. Si hay conexión a internet, la app puede actualizar el catálogo sin enviar lo que escribiste.</p>
+      </div>
+    </details>
+    <details class="gyg-privacy__detail">
+      <summary>
+        <h3>Catálogo y avisos de stock</h3>
+        <span class="gyg-privacy__indicator" aria-hidden="true"></span>
+      </summary>
+      <div class="gyg-privacy__detail-body">
+        <p>La app consulta páginas públicas de <a href="https://gygtienda.com.ar/">gygtienda.com.ar</a> para actualizar el catálogo y puede descargar imágenes desde la red de contenidos de Tiendanube. Estas solicitudes muestran al servidor la dirección IP, el recurso solicitado y otros datos técnicos de conexión.</p>
+        <p>Cuando activás «Avisame cuando vuelva», la app guarda en el teléfono el nombre y el identificador del producto. Si permitís las notificaciones y hay conexión, Android puede ejecutar comprobaciones en segundo plano. En cada comprobación la app solicita la página pública del producto, sin enviar tu nombre, correo electrónico ni un identificador de notificaciones. Android decide cuándo ejecutar la comprobación, por lo que el aviso puede demorarse.</p>
+        <p>Si la página indica que hay stock, el teléfono muestra una notificación y deja de seguir ese producto. Podés cancelar un aviso desde la ficha del producto.</p>
+      </div>
+    </details>
+    <details class="gyg-privacy__detail">
+      <summary>
+        <h3>Descuento del 10% y verificación del pago</h3>
+        <span class="gyg-privacy__indicator" aria-hidden="true"></span>
+      </summary>
+      <div class="gyg-privacy__detail-body">
+        <p>Al tocar «Comprar con descuento», la app envía al servidor de Tienda GYG alojado en Cloudflare un identificador generado a partir de la sesión del carrito. El servidor usa ese identificador para asignar una sola vez el descuento al mismo carrito y registra el código y la fecha de reserva. Cloudflare también recibe la dirección IP y usa datos de conexión para limitar solicitudes repetidas. La app envía el identificador derivado en lugar de la cookie de sesión original.</p>
+        <p>El servidor consulta a Tiendanube para comprobar qué pedidos se pagaron. Para esa verificación solicita el identificador del pedido, su estado de pago y el código de descuento utilizado. Si Tiendanube confirma el pago con un código del lote, el servidor conserva el identificador del pedido y la fecha de confirmación del canje para evitar que el código se vuelva a asignar. Esta verificación no solicita el nombre, el correo, la dirección de envío ni los datos de la tarjeta.</p>
+        <p>La app y el servidor usan conexiones HTTPS para estas operaciones. El registro de reservas y canjes de Cloudflare se conserva para controlar la disponibilidad y el uso único de los códigos. Actualmente esos registros no se borran de forma automática. Si solicitás su eliminación, revisaremos qué datos podemos eliminar según el estado del pedido y las obligaciones aplicables.</p>
+        <p>El 10% está sujeto a la disponibilidad de códigos y a las condiciones que muestra Tiendanube en el checkout. Cada código tiene un solo uso total. Podés elegir «Seguir sin descuento» para continuar sin solicitar un código a Cloudflare.</p>
+      </div>
+    </details>
+    <details class="gyg-privacy__detail">
+      <summary>
+        <h3>Carrito, compras y servicios de la tienda web</h3>
+        <span class="gyg-privacy__indicator" aria-hidden="true"></span>
+      </summary>
+      <div class="gyg-privacy__detail-body">
+        <p>Al confirmar que querés continuar a la tienda, la app envía a Tiendanube, a través de gygtienda.com.ar, los identificadores de los productos elegidos, sus variantes y cantidades. La tienda usa cookies de sesión para preparar y abrir ese carrito. Si decidís hacer una compra, Tienda GYG, Tiendanube y los proveedores de pago o envío que intervengan pueden tratar los datos de contacto, facturación, entrega y pago que correspondan para gestionar el pedido. Si elegís recibir ofertas y novedades por correo, la tienda puede usar tu dirección de correo para enviártelas.</p>
+        <p>Al abrir el carrito o una ficha en la tienda web, la página puede cargar servicios de medición, publicidad o funcionamiento, como Google Analytics y Google Tag Manager, Meta, Cloudflare, Tagy y, en algunas fichas, Pinterest. Según el servicio y la configuración de la página, esas solicitudes pueden incluir la página visitada, eventos de navegación, identificadores de sesión o medición, información del navegador y la dirección IP. Las cookies y demás tecnologías de la tienda web se rigen también por las políticas aplicables a cada servicio. Podés consultar la <a href="https://www.tiendanube.com/terminos-de-uso">política de privacidad de Tiendanube</a>.</p>
+        <p>Si abrís un enlace a una red social o elegís compartir un producto, el servicio que abras aplica su propia política de privacidad.</p>
+      </div>
+    </details>
+  </section>
 
-      <details class="gyg-privacy__detail">
-        <summary>
-          <h3>Qué guarda la app en tu teléfono</h3>
-          <span class="gyg-privacy__indicator" aria-hidden="true"></span>
-        </summary>
-        <div class="gyg-privacy__detail-body">
-          <p>La app guarda una copia del catálogo para mostrarlo más rápido, tus favoritos, tu carrito local y los productos para los que activás avisos de stock. Podés explorar el catálogo sin iniciar sesión en la app.</p>
-        </div>
-      </details>
+  <section id="gyg-derechos-de-privacidad" class="gyg-privacy__section gyg-privacy__rights" aria-labelledby="gyg-derechos-titulo">
+    <h2 id="gyg-derechos-titulo">Cómo borrar tus datos o ejercer tus derechos</h2>
+    <p>El domicilio comercial de Tienda GYG es Av. Pavón 2802, CABA.</p>
+    <p>Podés quitar favoritos, vaciar el carrito local o cancelar avisos desde la app. Para borrar juntos sus datos locales, abrí <strong>Ajustes &gt; Aplicaciones &gt; Tienda GYG &gt; Almacenamiento &gt; Borrar datos</strong> en Android. El nombre de estas opciones puede variar según el teléfono. Esta acción no elimina pedidos, cuentas, carritos web ni datos que ya se hayan enviado a la tienda o a sus proveedores.</p>
+    <p>Si querés acceder a tus datos personales, corregirlos, actualizarlos o solicitar su eliminación cuando corresponda, escribinos a <a href="mailto:infogyg2802@gmail.com">infogyg2802@gmail.com</a>. Indicá qué gestión solicitás y, si corresponde, el correo asociado a la compra o cuenta. Algunos datos pueden conservarse durante el tiempo necesario para cumplir obligaciones legales. En Argentina, podés consultar tus derechos y cómo presentar un reclamo ante la <a href="https://www.argentina.gob.ar/aaip/datospersonales/derechos">Agencia de Acceso a la Información Pública (AAIP)</a>.</p>
+    <a class="gyg-privacy__action" href="mailto:infogyg2802@gmail.com?subject=Consulta%20sobre%20mis%20datos">Escribinos por privacidad <span aria-hidden="true">↗</span></a>
+  </section>
 
-      <details class="gyg-privacy__detail">
-        <summary>
-          <h3>Buscador de regalos</h3>
-          <span class="gyg-privacy__indicator" aria-hidden="true"></span>
-        </summary>
-        <div class="gyg-privacy__detail-body">
-          <p>La frase que escribís y el presupuesto que indicás se procesan íntegramente en tu teléfono para recomendar productos del catálogo. La app no envía la frase ni el presupuesto a Tienda GYG, Tiendanube ni a un proveedor de inteligencia artificial. Tampoco guarda un historial de tus búsquedas de regalos. Si hay conexión a internet, la app puede actualizar el catálogo sin enviar lo que escribiste.</p>
-        </div>
-      </details>
-
-      <details class="gyg-privacy__detail">
-        <summary>
-          <h3>Catálogo y avisos de stock</h3>
-          <span class="gyg-privacy__indicator" aria-hidden="true"></span>
-        </summary>
-        <div class="gyg-privacy__detail-body">
-          <p>La app consulta páginas públicas de <a href="https://gygtienda.com.ar/">gygtienda.com.ar</a> para actualizar el catálogo y puede descargar imágenes desde la red de contenidos de Tiendanube. Estas solicitudes muestran al servidor la dirección IP, el recurso solicitado y otros datos técnicos de conexión.</p>
-          <p>Cuando activás «Avisame cuando vuelva», la app guarda en el teléfono el nombre y el identificador del producto. Si permitís las notificaciones y hay conexión, Android puede ejecutar comprobaciones en segundo plano. En cada comprobación la app solicita la página pública del producto, sin enviar tu nombre, correo electrónico ni un identificador de notificaciones. Android decide cuándo ejecutar la comprobación, por lo que el aviso puede demorarse.</p>
-          <p>Si la página indica que hay stock, el teléfono muestra una notificación y deja de seguir ese producto. Podés cancelar un aviso desde la ficha del producto.</p>
-        </div>
-      </details>
-
-      <details class="gyg-privacy__detail">
-        <summary>
-          <h3>Carrito, compras y servicios de la tienda web</h3>
-          <span class="gyg-privacy__indicator" aria-hidden="true"></span>
-        </summary>
-        <div class="gyg-privacy__detail-body">
-          <p>Al confirmar que querés continuar a la tienda, la app envía a Tiendanube, a través de gygtienda.com.ar, los identificadores de los productos elegidos, sus variantes y cantidades. La tienda usa cookies de sesión para preparar y abrir ese carrito. Si decidís hacer una compra, la tienda y los proveedores que selecciones pueden tratar los datos que ingreses, como contacto, facturación, envío y pago, según el proceso de compra y el medio elegido.</p>
-          <p>Al abrir el carrito o una ficha en la tienda web, la página puede cargar servicios de medición, publicidad o funcionamiento, como Google Analytics y Google Tag Manager, Meta, Cloudflare, Tagy y, en algunas fichas, Pinterest. Según el servicio y la configuración de la página, esas solicitudes pueden incluir la página visitada, eventos de navegación, identificadores de sesión o medición, información del navegador y la dirección IP. Las cookies y demás tecnologías de la tienda web se rigen también por las políticas aplicables a cada servicio. Podés consultar la <a href="https://www.tiendanube.com/terminos-de-uso">política de privacidad de Tiendanube</a>.</p>
-          <p>Si abrís un enlace a una red social o elegís compartir un producto, el servicio que abras aplica su propia política de privacidad.</p>
-        </div>
-      </details>
-    </section>
-
-    <section id="gyg-derechos-de-privacidad" class="gyg-privacy__section gyg-privacy__rights" aria-labelledby="gyg-derechos-titulo">
-      <h2 id="gyg-derechos-titulo">Cómo borrar tus datos o ejercer tus derechos</h2>
-      <p>El domicilio comercial de Tienda GYG es Av. Pavón 2802, CABA.</p>
-      <p>Podés quitar favoritos, vaciar el carrito local o cancelar avisos desde la app. Para borrar juntos sus datos locales, abrí <strong>Ajustes &gt; Aplicaciones &gt; Tienda GYG &gt; Almacenamiento &gt; Borrar datos</strong> en Android. El nombre de estas opciones puede variar según el teléfono. Esta acción no elimina pedidos, cuentas, carritos web ni datos que ya se hayan enviado a la tienda o a sus proveedores.</p>
-      <p>Si querés acceder a tus datos personales, corregirlos, actualizarlos o solicitar su eliminación cuando corresponda, escribinos a <a href="mailto:infogyg2802@gmail.com">infogyg2802@gmail.com</a>. Indicá qué gestión solicitás y, si corresponde, el correo asociado a la compra o cuenta. Algunos datos pueden conservarse durante el tiempo necesario para cumplir obligaciones legales. En Argentina, podés consultar tus derechos y cómo presentar un reclamo ante la <a href="https://www.argentina.gob.ar/aaip/datospersonales/derechos">Agencia de Acceso a la Información Pública (AAIP)</a>.</p>
-      <a class="gyg-privacy__action" href="mailto:infogyg2802@gmail.com?subject=Consulta%20sobre%20mis%20datos">Escribinos por privacidad <span aria-hidden="true">↗</span></a>
-    </section>
-
-    <footer class="gyg-privacy__section gyg-privacy__footer">
-      <h2>Cambios en esta política</h2>
-      <p>Cuando cambie la forma en que la app o la tienda tratan estos datos, actualizaremos este texto y la fecha indicada arriba.</p>
-    </footer>
-  </article>
+  <footer class="gyg-privacy__section gyg-privacy__footer">
+    <h2>Cambios en esta política</h2>
+    <p>Cuando cambie la forma en que la app o la tienda tratan estos datos, actualizaremos este texto y la fecha indicada arriba.</p>
+  </footer>
+</article>
 </body>
 </html>
